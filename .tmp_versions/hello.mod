@@ -1,2 +1,2 @@
-/home/black/module/hello.ko
-/home/black/module/hello.o
+/home/black/moduleP/hello.ko
+/home/black/moduleP/hello.o

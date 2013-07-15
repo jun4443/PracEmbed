@@ -1,7 +1,7 @@
-cmd_/home/black/module/hello.mod.o := gcc -Wp,-MD,/home/black/module/.hello.mod.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/4.4.3/include  -Iinclude  -I/usr/src/linux-headers-2.6.32-49-generic/arch/x86/include -include include/linux/autoconf.h -Iubuntu/include  -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m64 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -fstack-protector -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(hello)"  -DMODULE -c -o /home/black/module/hello.mod.o /home/black/module/hello.mod.c
+cmd_/home/black/moduleP/hello.mod.o := gcc -Wp,-MD,/home/black/moduleP/.hello.mod.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/4.4.3/include  -Iinclude  -I/usr/src/linux-headers-2.6.32-49-generic/arch/x86/include -include include/linux/autoconf.h -Iubuntu/include  -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m64 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -fstack-protector -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(hello)"  -DMODULE -c -o /home/black/moduleP/hello.mod.o /home/black/moduleP/hello.mod.c
 
-deps_/home/black/module/hello.mod.o := \
-  /home/black/module/hello.mod.c \
+deps_/home/black/moduleP/hello.mod.o := \
+  /home/black/moduleP/hello.mod.c \
     $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
@@ -426,6 +426,6 @@ deps_/home/black/module/hello.mod.o := \
   include/linux/vermagic.h \
   include/linux/utsrelease.h \
 
-/home/black/module/hello.mod.o: $(deps_/home/black/module/hello.mod.o)
+/home/black/moduleP/hello.mod.o: $(deps_/home/black/moduleP/hello.mod.o)
 
-$(deps_/home/black/module/hello.mod.o):
+$(deps_/home/black/moduleP/hello.mod.o):

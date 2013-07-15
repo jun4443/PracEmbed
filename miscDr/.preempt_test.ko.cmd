@@ -1,1 +1,0 @@
-cmd_/home/black/moduleP/miscDr/preempt_test.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-2.6.32-49-generic/scripts/module-common.lds --build-id -o /home/black/moduleP/miscDr/preempt_test.ko /home/black/moduleP/miscDr/preempt_test.o /home/black/moduleP/miscDr/preempt_test.mod.o

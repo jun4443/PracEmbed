@@ -1,1 +1,1 @@
-cmd_/home/black/module/hello.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-2.6.32-49-generic/scripts/module-common.lds --build-id -o /home/black/module/hello.ko /home/black/module/hello.o /home/black/module/hello.mod.o
+cmd_/home/black/moduleP/hello.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-2.6.32-49-generic/scripts/module-common.lds --build-id -o /home/black/moduleP/hello.ko /home/black/moduleP/hello.o /home/black/moduleP/hello.mod.o

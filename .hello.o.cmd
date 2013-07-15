@@ -1,7 +1,7 @@
-cmd_/home/black/module/hello.o := gcc -Wp,-MD,/home/black/module/.hello.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/4.4.3/include  -Iinclude  -I/usr/src/linux-headers-2.6.32-49-generic/arch/x86/include -include include/linux/autoconf.h -Iubuntu/include  -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m64 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -fstack-protector -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack  -DMODULE -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello)"  -D"KBUILD_MODNAME=KBUILD_STR(hello)"  -c -o /home/black/module/.tmp_hello.o /home/black/module/hello.c
+cmd_/home/black/moduleP/hello.o := gcc -Wp,-MD,/home/black/moduleP/.hello.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/4.4.3/include  -Iinclude  -I/usr/src/linux-headers-2.6.32-49-generic/arch/x86/include -include include/linux/autoconf.h -Iubuntu/include  -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m64 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -fstack-protector -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack  -DMODULE -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello)"  -D"KBUILD_MODNAME=KBUILD_STR(hello)"  -c -o /home/black/moduleP/.tmp_hello.o /home/black/moduleP/hello.c
 
-deps_/home/black/module/hello.o := \
-  /home/black/module/hello.c \
+deps_/home/black/moduleP/hello.o := \
+  /home/black/moduleP/hello.c \
   include/linux/init.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
@@ -423,7 +423,9 @@ deps_/home/black/module/hello.o := \
     $(wildcard include/config/4kstacks.h) \
   include/asm-generic/module.h \
   include/trace/events/module.h \
+  include/linux/miscdevice.h \
+  include/linux/major.h \
 
-/home/black/module/hello.o: $(deps_/home/black/module/hello.o)
+/home/black/moduleP/hello.o: $(deps_/home/black/moduleP/hello.o)
 
-$(deps_/home/black/module/hello.o):
+$(deps_/home/black/moduleP/hello.o):
